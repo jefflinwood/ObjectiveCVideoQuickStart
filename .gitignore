@@ -1,0 +1,6 @@
+Pods/
+Podfile.lock
+ObjCVideoQuickstart.xcworkspace
+
+xcuserdata/
+*.xcuserstate
