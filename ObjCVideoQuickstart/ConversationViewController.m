@@ -32,7 +32,7 @@
   // Do any additional setup after loading the view.
   
   NSString *accessToken = @"TWILIO_ACCESS_TOKEN";
-  NSURL *tokenURL = [NSURL URLWithString:@"https://1410f980.ngrok.io/token.php"];
+  NSURL *tokenURL = [NSURL URLWithString:@"http://localhost:8000/token.php"];
   
   /**
    * Providing your own access token? Replace TWILIO_ACCESS_TOKEN in the line
@@ -44,7 +44,7 @@
   /**
    * Using the PHP server to provide access tokens? Make sure the tokenURL is
    * pointing to the correct location - the default is
-   * http://localhost:7000/token.php
+   * http://localhost:8000/token.php
    *
    * If you provided your own access token,
    * be sure to comment out the following line of code.
@@ -81,7 +81,6 @@
       });
       
     } else {
-      //TODO: Present error to user
       NSString *errorMessage = [NSString stringWithFormat:@"Error retrieving access token: %@",[error localizedDescription]];
       [self displayErrorMessage:errorMessage];
       NSLog(@"%@",errorMessage);
