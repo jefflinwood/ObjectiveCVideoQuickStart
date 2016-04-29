@@ -3,10 +3,15 @@
 ## Get up and Running
 
 1) Create a Twilio Account if you don't already have one
+
 2) Download this project and run `pod install` to install the Twilio frameworks
+
 3) Get an access token [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools)
+
 4) Paste the access token into ConversationsViewController.m
+
 5) Run your app (preferably on an iOS device, but could be on the Simulator)
+
 6) Start up a video chat from the above web page!
 
 ## What is this project?
