@@ -2,17 +2,17 @@
 
 ## Get up and Running
 
-1) Create a Twilio Account if you don't already have one
+1) Create a Twilio Video [Configuration Profile](https://www.twilio.com/user/account/video/profiles). If you haven't used Twilio before, welcome! You'll need to [Sign up for a Twilio account](https://www.twilio.com/try-twilio).
 
-2) Download this project and run `pod install` to install the Twilio frameworks
+2) Download this project and run `pod install` to install the Twilio frameworks. Open ObjCVideoQuickstart.xcworkspace in XCode
 
-3) Get an access token [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools)
+3) Get an access token [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools). Pick your identity (such as Bob). Leave this web page open, because you'll use it as the other side of the video chat.
 
-4) Paste the access token into ConversationsViewController.m
+4) Paste the access token into ConversationViewController.m
 
-5) Run your app (preferably on an iOS device, but could be on the Simulator)
+5) Run your app (preferably on an iOS device, but could be on the iOS simulator)
 
-6) Start up a video chat from the above web page!
+6) On the same web page where you generated the token, scroll down the bottom, put in the username that you generated the access token for, and click Create Conversation. Your video conversation should start immediately! 
 
 ## What is this project?
 
