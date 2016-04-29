@@ -1,6 +1,6 @@
 # Twilio Video Quick Start for Objective-C
 
-## Get up and Running
+## Up and Running
 
 1) Create a Twilio Video [Configuration Profile](https://www.twilio.com/user/account/video/profiles). If you haven't used Twilio before, welcome! You'll need to [Sign up for a Twilio account](https://www.twilio.com/try-twilio).
 
@@ -13,6 +13,8 @@
 5) Run your app (preferably on an iOS device, but could be on the iOS simulator)
 
 6) On the same web page where you generated the token, scroll down the bottom, put in the username that you generated the access token for, and click Create Conversation. Your video conversation should start immediately! 
+
+![Twilio Video Quick Start App Screenshot](http://i.imgur.com/7OF4XmI.jpg)
 
 ## What is this project?
 
