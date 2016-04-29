@@ -48,18 +48,7 @@ Next, just run `pod install` from the command line in the top level directory of
 
 Download the latest versions of the Twilio Conversations and Twilio Commons frameworks from the [Twilio Video SDK Download Page](https://www.twilio.com/docs/api/video/sdks). After uncompressing those download files, drag and drop the frameworks (TwilioCommon.framework and TwilioConversationClient.framework) onto your project in XCode. Make sure that the checkbox next to the ObjCVideoQuickstart target is checked. You may want to copy the files if needed into your project as well, so you aren't referencing frameworks from your Downloads folder.
 
-In addition to the Twilio frameworks, if you aren't using Cocoapods, you will have to add several iOS frameworks, as well as making one change to your linker flags. Let's set up the frameworks. In XCode, select your project, and then select the General tab. At the bottom is the Linked Frameworks and Libraries section, which you may need to expand with the black dropdown arrow. Use the + button below the two Twilio frameworks to add all of these frameworks:
-
-AudioToolbox.framework
-VideoToolbox.framework
-AVFoundation.framework
-CoreTelephony.framework
-GLKit.framework
-CoreMedia.framework
-SystemConfiguration.framework
-libc++.tbd
-
-After adding those frameworks, there is another change we need to make on Build Settings. Select the Build Settings tab, and then find Other Linker Flags - you can type it into the search box to quickly narrow down the list.
+In addition to the Twilio frameworks, if you aren't using Cocoapods, you will have to make one change to your linker flags. This change is on Build Settings. Select the Build Settings tab, and then find Other Linker Flags - you can type it into the search box to quickly narrow down the list.
 
 Add -ObjC as a linker flag - select the blank values box, and type -ObjC into the box at the top of the popup. Be sure to hit the enter key to save it. You'll see -ObjC in bold as a linker flag after you've finished.
 

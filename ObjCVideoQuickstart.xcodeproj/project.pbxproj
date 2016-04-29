@@ -13,6 +13,14 @@
 		2832149F1CD1307900F1AD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2832149E1CD1307900F1AD80 /* Assets.xcassets */; };
 		283214A21CD1307900F1AD80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283214A01CD1307900F1AD80 /* LaunchScreen.storyboard */; };
 		283214AB1CD1312F00F1AD80 /* ConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283214AA1CD1312F00F1AD80 /* ConversationViewController.m */; };
+		283214C11CD3BDC400F1AD80 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214C01CD3BDC400F1AD80 /* libc++.tbd */; };
+		283214C31CD3BDCE00F1AD80 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214C21CD3BDCE00F1AD80 /* SystemConfiguration.framework */; };
+		283214C51CD3BDDF00F1AD80 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214C41CD3BDDF00F1AD80 /* CoreMedia.framework */; };
+		283214C71CD3BDE700F1AD80 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214C61CD3BDE700F1AD80 /* GLKit.framework */; };
+		283214C91CD3BDF400F1AD80 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214C81CD3BDF400F1AD80 /* CoreTelephony.framework */; };
+		283214CB1CD3BDFF00F1AD80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214CA1CD3BDFF00F1AD80 /* AVFoundation.framework */; };
+		283214CD1CD3BE0700F1AD80 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214CC1CD3BE0700F1AD80 /* VideoToolbox.framework */; };
+		283214CF1CD3BE0D00F1AD80 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283214CE1CD3BE0D00F1AD80 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		283214A31CD1307900F1AD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283214A91CD1312F00F1AD80 /* ConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationViewController.h; sourceTree = "<group>"; };
 		283214AA1CD1312F00F1AD80 /* ConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationViewController.m; sourceTree = "<group>"; };
+		283214C01CD3BDC400F1AD80 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		283214C21CD3BDCE00F1AD80 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		283214C41CD3BDDF00F1AD80 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		283214C61CD3BDE700F1AD80 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		283214C81CD3BDF400F1AD80 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		283214CA1CD3BDFF00F1AD80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		283214CC1CD3BE0700F1AD80 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		283214CE1CD3BE0D00F1AD80 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283214CF1CD3BE0D00F1AD80 /* AudioToolbox.framework in Frameworks */,
+				283214CD1CD3BE0700F1AD80 /* VideoToolbox.framework in Frameworks */,
+				283214CB1CD3BDFF00F1AD80 /* AVFoundation.framework in Frameworks */,
+				283214C91CD3BDF400F1AD80 /* CoreTelephony.framework in Frameworks */,
+				283214C71CD3BDE700F1AD80 /* GLKit.framework in Frameworks */,
+				283214C51CD3BDDF00F1AD80 /* CoreMedia.framework in Frameworks */,
+				283214C31CD3BDCE00F1AD80 /* SystemConfiguration.framework in Frameworks */,
+				283214C11CD3BDC400F1AD80 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,14 @@
 		283214861CD1307900F1AD80 = {
 			isa = PBXGroup;
 			children = (
+				283214CE1CD3BE0D00F1AD80 /* AudioToolbox.framework */,
+				283214CC1CD3BE0700F1AD80 /* VideoToolbox.framework */,
+				283214CA1CD3BDFF00F1AD80 /* AVFoundation.framework */,
+				283214C81CD3BDF400F1AD80 /* CoreTelephony.framework */,
+				283214C61CD3BDE700F1AD80 /* GLKit.framework */,
+				283214C41CD3BDDF00F1AD80 /* CoreMedia.framework */,
+				283214C21CD3BDCE00F1AD80 /* SystemConfiguration.framework */,
+				283214C01CD3BDC400F1AD80 /* libc++.tbd */,
 				283214911CD1307900F1AD80 /* ObjCVideoQuickstart */,
 				283214901CD1307900F1AD80 /* Products */,
 			);
