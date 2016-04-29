@@ -1,5 +1,14 @@
 # Twilio Video Quick Start for Objective-C
 
+## Get up and Running
+
+1) Create a Twilio Account if you don't already have one
+2) Download this project and run `pod install` to install the Twilio frameworks
+3) Get an access token [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools)
+4) Paste the access token into ConversationsViewController.m
+5) Run your app (preferably on an iOS device, but could be on the Simulator)
+6) Start up a video chat from the above web page!
+
 ## What is this project?
 
 This quick start will help you get video chat integrated directly into your iOS applications using Twilio's Video SDK. This quick start is for Objective-C developers - if your app uses Swift, or if you are new to iOS, check out the Twilio Video Quick Start for Swift.
@@ -86,6 +95,8 @@ be shown once - make sure to save this in a secure location.
 Because we suggest that you run your video chat application on actual iOS device so that you can use the camera on the device, you'll need to provide an externally accessible URL for the app (the iOS simulator will be fine with localhost). The [ngrok](https://ngrok.com/) tool creates a publicly accessible URL that you can use to send HTTP/HTTPS traffic to a server running on your localhost. Use HTTPS to make web connections that retrieve a Twilio access token.
 
 When you get a URL from ngrok, go ahead and update ConversationViewController.m with the new URL. You won't need to comment or uncomment any lines out from the application, but you will need to update the code if your ngrok URL changes.
+
+For this quick start, the Application transport security settings are set to allow arbitrary HTTP loads for testing your app. For production applications, you'll definitely want to retrieve access tokens over HTTPS/SSL.
 
 ## Have fun!
 
