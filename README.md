@@ -16,7 +16,7 @@
 
 ## What is this project?
 
-This quick start will help you get video chat integrated directly into your iOS applications using Twilio's Video SDK. This quick start is for Objective-C developers - if your app uses Swift, or if you are new to iOS, check out the Twilio Video Quick Start for Swift.
+This quick start will help you get video chat integrated directly into your iOS applications using Twilio's Video Conversations SDK. This quick start is for Objective-C developers - if your app uses Swift, or if you are new to iOS, check out the Twilio Video Quick Start for Swift.
 
 Inside this quick start project, you will find a Conversations View Controller that contains all of the functionality necessary to show two video streams on one iOS screen - one video stream for your phone's video camera, and one for a remote video stream.
 
@@ -62,7 +62,7 @@ Using Twilio's Video client within your applications requires an access token. T
 
 ### Generating an Access Token
 
-The first step is to [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools) from the Twilio developer console. Use whatever clever username you would like for the identity. You will get an access token that you can copy and paste into ConversationViewController.m - if you go down this path, be sure to follow the directions in the comments in the viewDidLoad() method at the top of the source file - you will need to uncomment one line, and comment out another.
+The first step is to [Generate an Access Token](https://www.twilio.com/user/account/video/dev-tools/testing-tools) from the Twilio developer console. Use whatever clever username you would like for the identity. You will get an access token that you can copy and paste into ConversationViewController.m
 
 Once you have that access token in place, scroll down to the bottom of the page and you will get a web-based video chat window in the Twilio developer console that you can use to communicate with your iPhone app! Just invite that identity you just named above!
 
@@ -88,7 +88,7 @@ be shown once - make sure to save this in a secure location.
 
 Because we suggest that you run your video chat application on actual iOS device so that you can use the camera on the device, you'll need to provide an externally accessible URL for the app (the iOS simulator will be fine with localhost). The [ngrok](https://ngrok.com/) tool creates a publicly accessible URL that you can use to send HTTP/HTTPS traffic to a server running on your localhost. Use HTTPS to make web connections that retrieve a Twilio access token.
 
-When you get a URL from ngrok, go ahead and update ConversationViewController.m with the new URL. You won't need to comment or uncomment any lines out from the application, but you will need to update the code if your ngrok URL changes.
+When you get a URL from ngrok, go ahead and update ConversationViewController.m with the new URL.  If you go down this path, be sure to follow the directions in the comments in the viewDidLoad() method at the top of the source file - you will need to uncomment one line, and comment out another. You will also need to update the code if your ngrok URL changes.
 
 For this quick start, the Application transport security settings are set to allow arbitrary HTTP loads for testing your app. For production applications, you'll definitely want to retrieve access tokens over HTTPS/SSL.
 

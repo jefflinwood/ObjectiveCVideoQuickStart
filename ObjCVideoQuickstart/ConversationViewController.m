@@ -35,21 +35,20 @@
   NSURL *tokenURL = [NSURL URLWithString:@"http://localhost:8000/token.php"];
   
   /**
-   * Providing your own access token? Replace TWILIO_ACCESS_TOKEN in the line
-   * above this with your token, and then uncomment out the line below:
+   * Providing your own access token? Replace TWILIO_ACCESS_TOKEN
+   * above this with your token.
    */
   
-  //[self initializeClientWithAccessToken:accessToken];
+  [self initializeClientWithAccessToken:accessToken];
   
   /**
    * Using the PHP server to provide access tokens? Make sure the tokenURL is
    * pointing to the correct location - the default is
    * http://localhost:8000/token.php
    *
-   * If you provided your own access token,
-   * be sure to comment out the following line of code.
+   * Uncomment out the following line of code:
    */
-  [self retrieveAccessTokenFromURL:tokenURL];
+  //[self retrieveAccessTokenFromURL:tokenURL];
   
 }
 
