@@ -5,6 +5,7 @@
 
 #import "ConversationViewController.h"
 
+#import <TwilioCommon/TwilioCommon.h>
 #import <TwilioConversationsClient/TwilioConversationsClient.h>
 
 
